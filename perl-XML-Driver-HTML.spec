@@ -1,6 +1,6 @@
 %define module 	XML-Driver-HTML
 %define version 0.06
-%define release %mkrel 6
+%define release %mkrel 7
 
 Summary:	SAX Driver for non wellformed HTML
 Name: 		perl-%{module}
@@ -45,5 +45,3 @@ using XML::Handler::YAWriter as a SAX Handler.
 %_mandir/man1/html2xhtml.*
 %_mandir/man3/XML::Driver::HTML.*
 %_bindir/html2xhtml
-
-

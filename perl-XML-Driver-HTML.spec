@@ -1,6 +1,6 @@
 %define module 	XML-Driver-HTML
 %define version 0.06
-%define release %mkrel 7
+%define release %mkrel 8
 
 Summary:	SAX Driver for non wellformed HTML
 Name: 		perl-%{module}

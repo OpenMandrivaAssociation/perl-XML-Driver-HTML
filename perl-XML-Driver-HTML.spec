@@ -2,14 +2,14 @@
 %define upstream_version 0.06
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	5
 
 Summary:	SAX Driver for non wellformed HTML
 License:	GPL	
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/XML/%{upstream_name}-%{upstream_version}.tar.bz2
+URL:		https://metacpan.org/dist/XML-Driver-HTML
+Source0:	https://cpan.metacpan.org/authors/id/K/KR/KRAEHE/XML-Driver-HTML-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel

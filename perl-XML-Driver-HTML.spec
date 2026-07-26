@@ -1,15 +1,13 @@
 %define upstream_name 	 XML-Driver-HTML
-%define upstream_version 0.06
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	0.06
+Release:	6
 
 Summary:	SAX Driver for non wellformed HTML
 License:	GPL	
 Group:		Development/Perl
 URL:		https://metacpan.org/dist/XML-Driver-HTML
-Source0:	https://cpan.metacpan.org/authors/id/K/KR/KRAEHE/XML-Driver-HTML-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/K/KR/KRAEHE/XML-Driver-HTML-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -23,7 +21,7 @@ The simplest kind of use, is a filter from HTML to XHTML
 using XML::Handler::YAWriter as a SAX Handler.
 
 %prep
-%setup -q  -n %{upstream_name}-%{upstream_version}
+%setup -q  -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -46,9 +44,7 @@ rm -f %{buildroot}%{perl_archlib}/perllocal.pod
 %changelog
 * Tue Jul 28 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.60.0-1mdv2010.0
 + Revision: 401867
-- rebuild using %%perl_convert_version
-
-* Wed Jul 23 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.06-10mdv2009.0
+- rebuild using %0.06 Wed Jul 23 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.06-10mdv2009.0
 + Revision: 242198
 - rebuild
 - kill re-definition of %%buildroot on Pixel's request

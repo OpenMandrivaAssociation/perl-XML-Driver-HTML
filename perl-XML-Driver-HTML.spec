@@ -2,7 +2,7 @@
 %define upstream_version 0.06
 Name:		perl-%{upstream_name}
 Version:	0.06
-Release:	1
+Release:	2
 
 Summary:	SAX Driver for non wellformed HTML
 License:	GPL	
@@ -22,7 +22,7 @@ The simplest kind of use, is a filter from HTML to XHTML
 using XML::Handler::YAWriter as a SAX Handler.
 
 %prep
-%setup -q  -n %{upstream_name}-%{version}
+%setup -q  -n XML-Driver-HTML-0.06
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
